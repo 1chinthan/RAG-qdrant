@@ -1,0 +1,31 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+main-env/
+.ipynb_checkpoints/
+
+# --- Secrets ---
+.env
+*.env
+
+# --- Qdrant: downloaded binaries and local data (anyone can re-download / rebuild) ---
+# Keep config.yaml and start_qdrant.bat; ignore everything else in qdrant/.
+qdrant/*
+!qdrant/config.yaml
+!qdrant/start_qdrant.bat
+
+# --- Old FAISS index files (no longer used) ---
+rag_index/
+
+# --- Your documents (may be private or copyrighted) ---
+# Delete this line, or add e.g. "!RAG_Guide.pdf" below it, to upload a PDF.
+*.pdf
+
+# --- Editor / OS clutter ---
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini
+.DS_Store

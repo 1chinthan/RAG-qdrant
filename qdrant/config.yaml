@@ -1,0 +1,12 @@
+# Qdrant settings for this project. Start the server with:  start_qdrant.bat
+storage:
+  storage_path: ./storage          # all collections are saved here (survives restarts)
+
+service:
+  host: 127.0.0.1                  # only reachable from this computer
+  http_port: 6333                  # REST API + dashboard: http://localhost:6333/dashboard
+  grpc_port: 6334
+  enable_static_content: true
+  static_content_dir: ./dist       # the web dashboard files
+
+telemetry_disabled: true
